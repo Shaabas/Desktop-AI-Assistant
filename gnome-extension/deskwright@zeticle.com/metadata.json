@@ -1,0 +1,7 @@
+{
+  "uuid": "deskwright@zeticle.com",
+  "name": "Deskwright",
+  "description": "Compositor-side helpers for JARVIS on GNOME/Wayland: screenshots, window list/geometry/control, pointer position, clipboard, the Deskwright conversational surface, an activity border, and a session-scoped halt control. The global JARVIS shortcut is configured by GNOME Settings rather than hard-coded in the extension. Independent of (and coexists with) migration-helpers@tristan.local: different UUID, bus name, schema, no shared state.",
+  "shell-version": ["48", "49", "50"],
+  "session-modes": ["user", "unlock-dialog"]
+}

@@ -1,0 +1,9 @@
+name: open_google
+description: Open Google in the browser.
+environment: playwright
+platform: any
+tags: [google, browser, open, web]
+steps:
+  - action: navigate
+    args:
+      url: https://www.google.com

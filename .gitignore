@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+
+# Secrets / local config
+.env
+config/api_keys.json
+
+# Runtime data / generated workflows
+logs/
+runtime/
+data/
+workflows/learned/
+workflows/adapted/
+
+# Audio / screenshots
+*.wav
+*.png
+*.jpg
+*.jpeg
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Machine-specific GNOME extension installation metadata
+
+# Downloaded AI model weights — keep locally, don't commit
+models/**/*.onnx
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.safetensors
+models/**/*.gguf

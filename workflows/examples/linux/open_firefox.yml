@@ -1,0 +1,15 @@
+name: open_firefox
+description: Open Firefox from the GNOME application overview.
+environment: desktop
+platform: linux
+tags: [firefox, browser, launch, application]
+steps:
+  - action: press_key
+    args:
+      key: Super_L
+  - action: type
+    args:
+      text: Firefox
+  - action: press_key
+    args:
+      key: Return

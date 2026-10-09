@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jarvis"
+version = "0.2.0"
+description = "JARVIS — local assistant orchestration with Gemini Computer Use and reusable YAML workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "termcolor==3.1.0",
+    "pydantic==2.12.0",
+    "google-genai>=2.7.0",
+    "rich>=14.0.0",
+    "python-dotenv==1.0.1",
+    "PyYAML>=6.0.2",
+    "playwright==1.55.0",
+    "browserbase==1.4.0",
+    "numpy>=1.24.0",
+    "scipy>=1.12.0",
+    "sounddevice>=0.4.6",
+    "faster-whisper>=0.10.0",
+    "openwakeword>=0.6.0",
+    "piper-tts>=1.7.0",
+    "edge-tts>=6.1.0",
+]
+
+[project.optional-dependencies]
+hud = ["PySide6>=6.5.0"]
+memory = ["chromadb>=0.4.0", "sentence-transformers>=2.2.0"]
+test = ["pytest>=8.0.0"]
+
+[project.scripts]
+jarvis = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

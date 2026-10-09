@@ -1,0 +1,15 @@
+[Unit]
+Description=JARVIS Assistant Daemon
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=__PROJECT_ROOT__
+ExecStart=__PYTHON_EXECUTABLE__ __PROJECT_ROOT__/main.py
+Restart=on-failure
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=graphical-session.target
